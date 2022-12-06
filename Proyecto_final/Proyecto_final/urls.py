@@ -18,12 +18,15 @@ from django.urls import path
 from Proyecto_final.views import saludar
 from Proyecto_final.views import segunda_vista
 from Proyecto_final.views import *
+from Appfamily.views import familiar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("saludar/", saludar),
     path("segunda_vista/",segunda_vista),
     path("dia/",dia_de_hoy),
-    path("saludo/<nombre>", saludo_con_nombre),
-    path("anio/<edad>", calcula_anio_nacimiento),
+    path("saludo/<nombre>",saludo_con_nombre),
+    path("anio/<edad>",calcula_anio_nacimiento),
+    path("sitio/",Sitio_web),
+    path("Familia/",familiar),
 ]

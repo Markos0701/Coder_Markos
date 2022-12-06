@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'Appfamily',
 ]
 
 ROOT_URLCONF = 'Proyecto_final.urls'
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'Proyecto_final.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/PC_ITF-QUILMES/Downloads/Curso_Python/git_repos/Proyecto_final/Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
