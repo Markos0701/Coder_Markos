@@ -46,3 +46,13 @@ def Sitio_web(request):
     documento= template.render(diccionario)
     
     return HttpResponse(documento)
+
+def Sitio_web2(request):
+
+    teste={"Hola":"Markos"}
+
+    template2= loader.get_template("template2.html")
+    
+    documento2= template2.render(teste)
+    
+    return HttpResponse(documento2)

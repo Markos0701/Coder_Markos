@@ -29,7 +29,7 @@ urlpatterns = [
     path("saludo/<nombre>",saludo_con_nombre),
     path("anio/<edad>",calcula_anio_nacimiento),
     path("sitio/",Sitio_web),
-    path("miembro/",familiar)
- 
+    path("miembro/",familiar),
+    path("Sitio_web2/",Sitio_web2),
 
 ]
